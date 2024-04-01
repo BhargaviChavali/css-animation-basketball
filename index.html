@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .b1{
+            border-radius:50px;
+            width:100px;
+            height:100px;
+            background-color:brown;
+            animation-name: demo;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease-in-out;
+           
+        }
+        @keyframes demo{
+            0%{
+                transform:translate(0vw,0vh);
+        }
+        50%{  
+                transform:translate(30vw,85vh);
+        }
+        80%{
+                transform:translate(90vw,0vh);
+                animation-play-state: paused;
+        }
+        100%{
+                
+                transform:translate(90vw,85vh);
+                animation-play-state: paused;
+        }
+        }
+        </style>
+</head>
+<body>
+    
+    <div>
+    <div class="b1"> </div>
+    </div>
+    <div class="md">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.7dZ0PD4pWcbAfdIZj9IGBAHaHz&pid=Api&P=0&h=220" height="200" width="200">
+    </div>
+    
+</body>
+</html>
